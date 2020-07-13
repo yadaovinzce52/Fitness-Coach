@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FitnessCoach</string>
+    <string name="welcome_to_your_personal_fitness_coach">Welcome to your personal Fitness Coach! No email required!</string>
+    <string name="please_sign_in">Please sign in or register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter">enter</string>
+    <string name="clear">clear</string>
+</resources>
