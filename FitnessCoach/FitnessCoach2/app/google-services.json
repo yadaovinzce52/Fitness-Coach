@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "370979015259",
+    "firebase_url": "https://fitness-coach-b7fdb.firebaseio.com",
+    "project_id": "fitness-coach-b7fdb",
+    "storage_bucket": "fitness-coach-b7fdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370979015259:android:d37100f5682822968d4d7e",
+        "android_client_info": {
+          "package_name": "com.example.fitnesscoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370979015259-t38chlpu629ghtcf3jjftcug6d067dmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-qSnPGfQzvI9Tg2LOcITP65Hp05k1Vw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370979015259-t38chlpu629ghtcf3jjftcug6d067dmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
