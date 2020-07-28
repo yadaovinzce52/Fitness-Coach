@@ -1,5 +1,6 @@
-package com.example.information;
+package com.example.fitnesscoach;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class MainActivity extends AppCompatActivity {
+public class Information extends AppCompatActivity {
 
     private EditText weight;
     private EditText availability;
@@ -31,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_information);
+
+        Intent information = getIntent();
 
         weight = (EditText) findViewById((R.id.editWeight));
         availability = (EditText) findViewById(R.id.editAvailability);
@@ -41,8 +44,11 @@ public class MainActivity extends AppCompatActivity {
         //advanced = (RadioButton) findViewById(R.id.radioAdvanced);
         save = (Button) findViewById(R.id.saveButton);
 
+        Bundle b = this.getIntent().getExtras();
+        String i = b.getString("username");
+
         user = new User();
-        reff = FirebaseDatabase.getInstance().getReference().child("User");
+        reff = FirebaseDatabase.getInstance().getReference().child("User").child(i).child("Information");
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
                  int selectedID = experience.getCheckedRadioButtonId();
                  selectedExperience = (RadioButton) findViewById(selectedID);
                  user.setExperience(selectedExperience.getText().toString().trim());
-                 reff.push().setValue(user);
+                 reff.setValue(user);
 
-                 //Toast.makeText(MainActivity.this, "data inseted successfully", Toast.LENGTH_LONG).show();
+                 //Toast.makeText(MainActivity.this, "data inserted successfully", Toast.LENGTH_LONG).show();
             }
         });
 
