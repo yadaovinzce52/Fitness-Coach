@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FitnessCoach</string>
+    <string name="welcome_to_your_personal_fitness_coach">Welcome to your personal Fitness Coach! No email required!</string>
+    <string name="please_sign_in">Please sign in or register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter">enter</string>
+    <string name="clear">clear</string>
+    <string name="search_user">Search user</string>
+    <string name="please_enter_user_you_want_to_search">Please enter user you want to search</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="search">Search</string>
+</resources>
